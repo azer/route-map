@@ -18,7 +18,7 @@ match = routeMap({
   '/pages/:page': showPage
 })
 
-match('foobar.com/people/john?foo=bar')
+match('http://foobar.com/people/john?foo=bar')
 // => {
 //       fn: showUser,
 //       params: { name: 'john' },
