@@ -4,13 +4,13 @@
   "description": "Match a url from an object of route patterns",
   "main": "index.js",
   "scripts": {
-    "test": "fox"
+    "test": "prova"
   },
   "dependencies": {
     "path-to-regexp": "0.0.x"
   },
   "devDependencies": {
-    "fox": "*"
+    "prova": "*"
   },
   "keywords": [
     "match",
