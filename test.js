@@ -14,6 +14,7 @@ test('returns an object with matching function', function (t) {
   t.equal(match('http://localhost/fruits/orange').fn, fruit);
   t.equal(match('http://localhost:8080/fruits/orange/1/').fn, fruitPage);
   t.equal(match('http://localhost/').fn, home);
+  t.deepEqual(match('http://localhost/fruits/orange/1').keys.map(function (el) { return el.name; }), ['fruit', 'page']);
   t.end();
 });
 

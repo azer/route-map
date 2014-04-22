@@ -24,7 +24,8 @@ function routeMap (routes) {
       url: fullUrl,
       hash: url.hash,
       qs: url.query,
-      params: {}
+      params: {},
+      keys: keys
     };
 
     var pattern, match, i;
@@ -35,6 +36,7 @@ function routeMap (routes) {
 
       result.pattern = pattern;
       result.fn = routes[pattern];
+      result.keys = map[pattern].keys;
 
       if (result.qs) {
         result.qs = parseQS(result.qs);
